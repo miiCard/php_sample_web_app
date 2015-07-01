@@ -7,8 +7,14 @@
             </div>                       
         </footer> 
         
-        <!-- Direct ID Script -->
-        <script src="https://az708254.vo.msecnd.net/content/0.0.68/directid.js"></script>
-
+        
+        <?php 
+            if(isset($_POST["version"])){
+                $version = $_POST["version"];
+                echo '<!-- Direct ID Script -->';
+                echo '<script src="https://az708254.vo.msecnd.net/content/' . $version . '/directid.min.js"></script>';
+            }
+        ?>
+        
     </body>
 </html>
