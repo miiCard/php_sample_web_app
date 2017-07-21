@@ -9,11 +9,8 @@
         
         
         <?php 
-            if(isset($_POST["version"])){
-                $version = $_POST["version"];
-                echo '<!-- Direct ID Script -->';
-                echo '<script src="https://az708254.vo.msecnd.net/content/' . $version . '/directid.min.js"></script>';
-            }
+		    echo '<!-- Direct ID Script -->';
+            echo '<script src="https://directid-cdn.azureedge.net/widget/latest/live/directid.min.js"></script>';
         ?>
         
     </body>

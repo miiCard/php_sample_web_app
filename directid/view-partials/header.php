@@ -7,12 +7,9 @@
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
         
         
-        <?php             
-            if(isset($_POST["version"])){
-                $version = $_POST["version"];                                
-                echo '<!-- Direct ID CSS -->';
-                echo '<link href="https://az708254.vo.msecnd.net/content/' . $version . '/directid.min.css" rel="stylesheet" />';
-            }
+        <?php                                           
+            echo '<!-- Direct ID CSS -->';
+            echo '<link href="https://directid-cdn.azureedge.net/widget/latest/live/directid.min.css" rel="stylesheet" />';
         ?>     
                 
         <!-- Example Style -->
