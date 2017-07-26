@@ -36,8 +36,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label>API Version</label>
-                        <input type="text" class="form-control" name="version" />                    
+                        <label>Full CDN Path</label>
+                        <input type="text" class="form-control" name="fullCDNPath" />
                     </div>                            
 
                     <div class="form-group">

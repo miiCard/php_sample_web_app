@@ -8,9 +8,12 @@
         </footer> 
         
         
-        <?php 
-		    echo '<!-- Direct ID Script -->';
-            echo '<script src="https://directid-cdn.azureedge.net/widget/latest/live/directid.min.js"></script>';
+        <?php
+            if(isset($_POST["fullCDNPath"])){
+                $fullCDNPath = trim($_POST["fullCDNPath"],"/");
+                echo '<!-- Direct ID Script -->';
+                echo '<script src="' . $fullCDNPath . '/directid.min.js"></script>';
+            }
         ?>
         
     </body>
